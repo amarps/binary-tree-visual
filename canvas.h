@@ -11,11 +11,15 @@ class Canvas : public QWidget
 {
     Q_OBJECT
 public:
-    Canvas();
+    explicit Canvas();
 
     QSize minimumSizeHint() const override;
     QSize sizeHint() const override;
     QColor getBackgroundColor() const;
+
+protected:
+    void paintEvent(QPaintEvent *event) override;
+    void mouseReleaseEvent(QMouseEvent *event) override;
 
 private:
     QColor backgroundColor;

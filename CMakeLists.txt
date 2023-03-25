@@ -19,6 +19,8 @@ add_executable(rewrite_bt
   mainwindow.cpp
   canvas.h
   canvas.cpp
+  sidebar.h
+  sidebar.cpp
 )
 
 target_link_libraries(rewrite_bt Qt${QT_VERSION_MAJOR}::Core)
