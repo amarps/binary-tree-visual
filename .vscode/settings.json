@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "qcolor": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "qstringlistiterator": "cpp",
+        "iostream": "cpp"
     }
 }

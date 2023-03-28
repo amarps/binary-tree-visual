@@ -21,6 +21,7 @@ add_executable(rewrite_bt
   canvas.cpp
   sidebar.h
   sidebar.cpp
+  binarysearchtree.h
 )
 
 target_link_libraries(rewrite_bt Qt${QT_VERSION_MAJOR}::Core)

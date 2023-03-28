@@ -3,6 +3,9 @@
 
 #include <QVBoxLayout>
 #include <QWidget>
+#include <QPushButton>
+#include <QLabel>
+#include <QLineEdit>
 
 class Sidebar : public QWidget
 {
@@ -12,6 +15,15 @@ private:
 public:
     Sidebar();
     ~Sidebar();
+
+    QLineEdit* insertValueLineEdit;
+    QLineEdit* deleteValueLineEdit;
+    QPushButton* insertButton;
+    QPushButton* deleteButton;
+    QPushButton* stoporderButton;
+    QPushButton* preorderButton;
+    QPushButton* inorderButton;
+    QPushButton* postorderButton;
 };
 
 

@@ -6,12 +6,13 @@
 #include <QBrush>
 #include <QMouseEvent>
 #include <QColor>
+#include "binarysearchtree.h"
 
 class Canvas : public QWidget
 {
     Q_OBJECT
 public:
-    explicit Canvas();
+    explicit Canvas(BinarySearchTree<int> *bst, QWidget *parent = 0);
 
     QSize minimumSizeHint() const override;
     QSize sizeHint() const override;
@@ -22,7 +23,10 @@ protected:
     void mouseReleaseEvent(QMouseEvent *event) override;
 
 private:
+    BinarySearchTree<int> *bst;
+    double scale = 1;
     QColor backgroundColor;
+    void autoSize();
 };
 
 #endif // CANVAS_H
